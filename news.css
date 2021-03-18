@@ -1,0 +1,278 @@
+body {
+    font-family: serif;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+h2, h3 {
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 2px solid black;
+    grid-column: 1/13;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav-bar {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar a:hover {
+    color: darkgoldenrod;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#misc-info {
+    border-bottom: 1px solid #DADCE0;
+    grid-row: 2;
+    grid-column: 1/13;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#welcome-header {
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    grid-row: 3;
+    grid-column: 1/13;
+    margin-top: -50px;
+}
+
+button {
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    font-family: serif;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+}
+
+#headshot {
+    float: left;
+    padding: 5px;
+}
+
+#main-section {
+    grid-row: 4/11;
+    grid-column: 1/10; 
+    padding: 20px;
+}
+
+#right-section {
+    grid-column: 10/13;
+    grid-row: 4/11;
+    justify-content: center;
+    border-left: 2px solid black;
+    padding: 20px;
+}
+
+#editor-pick {
+    border-bottom: 1px solid #DADCE0;
+    grid-row: 4/7;
+}
+
+#opinion {
+    grid-row: 7/10;
+    border-bottom: 1px solid #DADCE0;
+}
+
+#credit {
+    border-top: 1px solid #DADCE0;
+    grid-row: 10/11;
+}
+
+#bio {
+    border-bottom: 2px solid black;
+    grid-row: 4/6;
+}
+
+#projects {
+    border-bottom: 2px solid black;
+    grid-row: 6/8;
+}
+
+#project-one {
+    border-bottom: 1px solid #DADCE0;
+}
+
+#project-one img, #project-two img {
+    max-width: 100%;
+    padding: 5px;
+}
+
+#skills {
+    border-bottom: 2px solid black;
+    grid-row: 8/9;
+}
+
+#experience {
+    grid-row: 9/11;
+    grid-column: 1/10;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+#pursuit {
+    grid-row: 1/7;
+    grid-column: 1/3;
+    border-right: 1px solid #DADCE0;
+    padding: 5px;
+}
+
+#torch {
+    grid-row: 1/7;
+    grid-column: 3/5;
+    border-right: 1px solid #DADCE0;
+    padding: 5px;
+}
+
+#partners {
+    grid-row: 1/7;
+    grid-column: 5/8;
+    padding: 5px;
+}
+
+#stickman {
+    height: 30px;
+    width: 30px;
+}
+
+#contact a {
+    padding-left: 10px;
+}
+
+.bottom-container {
+    border-top: 3px solid black;
+    grid-row: 11/12;
+    grid-column: 1/13;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 30px .5fr repeat(7, 3fr) 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 1fr .25fr .5fr repeat(10, 3fr) 1fr;
+    }
+
+    #right-section {  
+        grid-row: 11/14;
+        grid-column: 1/10;
+        border-left: none;
+    }
+
+    .bottom-container {
+        grid-row: 14/15;
+        grid-column: 1/10;
+    }
+
+    #experience {
+        border-bottom: 2px solid black;
+        grid-row: 9/11;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #pursuit {
+        grid-row: 1/2;
+        grid-column: 1/10;
+        border: none;
+    }
+
+    #torch {
+        grid-row: 2/3;
+        grid-column: 1/10;
+        border: none;
+    }
+
+    #partners {
+        grid-row: 3/4;
+        grid-column: 1/10;
+    }
+
+    nav {
+        grid-column: 1/10;
+    }
+
+    #misc-info {
+        grid-column: 1/10;
+        justify-items: stretch;
+    }
+
+    #misc-header {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    #misc-header li {
+        padding: 5px;
+        border-top: 1px solid #DADCE0;
+    }
+
+    #random {
+        grid-row: 1/2;
+    }
+
+    #stock {
+        grid-row: 2/3;
+    }
+
+    #date {
+        grid-row: 3/4;
+    }
+
+    #weather {
+        grid-row: 4/5;
+    }
+
+    #welcome-header {
+        grid-column: 1/10;
+    }
+}
