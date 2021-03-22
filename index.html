@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="news.css">
-    <link rel="shortcut icon" type="image/png" href="./Programming Favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./assets/Programming Favicon.png">
 </head>
 <body>
     <div class="container">
@@ -24,7 +24,7 @@
     <div id="misc-info">
         <ul id="misc-header" class="header">
             <li id="random">Volume.I No.I</li>
-            <li id="stock">Stock?</li>
+            <li id="stock">Pretend this is a free stock ticker api</li>
             <li id="date">Date?</li>
            
             <li id="weather">Weather?</li>
@@ -33,19 +33,29 @@
     
     <div id="welcome-header" class="header">
     <h1>Breaking News! Wild Bong Sighted!</h1>
-    <button id="switch-style" type="button">Click me for different style!</button>
+    <button id="switch-style" type="button" onclick="switchStyle()">Click me for different style!</button>
     </div>
 
     <div id="main-section">
         
         <div id="bio" class="main-container">
-            <h2>Background</h2>
-            <img id="headshot" src="./Pursuit 7.0 - Headshot.jpg" alt="headshot" height="200" width="200">
+            <img id="headshot" src="./assets/Pursuit 7.0 - Headshot.jpg" alt="headshot" height="200" width="200">
+            <div id="recipe">
+                <h3>Recipe of the Day: Grace Bong</h3>
+                <ul>
+                    <li>1 slab of Korean American</li>
+                    <li>1 jug of LGBTQIA+</li>
+                    <li>1 julienned female</li>
+                    <li>1 sprinkling of bartender/barista</li>
+                    <li>1 dash of wittiness</li>
+                </ul>
+                <p>Take your slab of Korean American, slather on that LGBTQIA and bake for 40min at 400F. Combine your julienned female with some bartener/barista and a dash of wittiness into a large bowl and toss. Serve your slab hot and sizzling with a side of cool seasoned julienne.</p>
+            </div>
+            
             <div id="background">
-            <p>Grace Bong recipe: 1 slab of Korean-American, 1 minced LGBT, 1 julienned female, 1 sprinkling of bartender, with a dash of wittiness.</p>
-            <p>I love to create things, whether it be cooking, writing poetry, programming or making drinks. I love the mental stimulation and innovative solutions that comes with the process of creating.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo velit saepe facere suscipit. Quo molestias deserunt eos, ab consectetur aliquam ipsam, sint impedit totam assumenda laborum, reiciendis exercitationem laudantium similique.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni ab quia nesciunt excepturi possimus debitis asperiores non, alias, rerum eius itaque. Dolor a debitis eum et, velit consequatur suscipit.</p>
+                <h2>Background</h2>
+                <p>I love to create things, whether it be cooking, writing poetry, programming or making drinks. I love the mental stimulation and innovative solutions that comes with the process of creating. </p>
+                <p>This portfolio is an upgraded version of the <a href="https://codepen.io/bongster91/pen/VwaWmLz">mini site</a> that I submitted as part of the Pursuit application. I think this portfolio is an effective measurement of the skills and knowledge I obtained since then. How memorable it would be if my portfolio plunges me into the software engineering industry the way the mini site dipped me into Pursuit...</p>
             </div>
         </div>
 
@@ -53,13 +63,13 @@
             <h2>Projects</h2>
             <div id="project-one">
                 <h4>Text Based Adventure</h4>
-                <img class="project-giphy" src="./Text based Adventure Giphy.gif" height="400" width="800">
+                <img class="project-giphy" src="./assets/Text based Adventure Giphy.gif" height="400" width="800">
                 <p>Text based, turn based, multiple ending story on terminal.</p>
             </div>
             
             <div id="project-two">
                 <h4>Snowman</h4>
-                <img class="project-giphy" src="./Snowman Giphy.gif" height="400" width="800">
+                <img class="project-giphy" src="./assets/Snowman Giphy.gif" height="400" width="800">
                 <p>Word guessing game on terminal.</p>
             </div>
         </div>
@@ -67,18 +77,18 @@
 
         <div id="skills" class="main-container">
             <h2>Skills/Knowledge</h2>
-            <img src="./html.png" alt="html icon" height="100" width="100">
-            <img src="./css.png" alt="css icon" height="100" width="100">
-            <img src="./js.png" alt="javascript icon" height="100" width="100">
-            <img src="./eml.png" alt="" height="100" width="100">
-            <img src="./github.png" alt="github icon" height="100" width="100">
-            <img src="./Microsoft Office.png" alt="microsoft office icon" height="100" width="100">
-            <img src="./obj.png" alt="object icon" height="100" width="100">
-            <img src="./PostgreSQL.png" alt="postgresql icon" height="100" width="100">
-            <img src="./React&Redux Logo.jpeg" alt="react/redux icon" height="100" width="100">
-            <img src="./sql.png" alt="sql icon" height="100" width="100">
-            <img src="./Visual Studio Code.webp" alt="vs code icon" height="100" width="100">
-            <img src="./website.png" alt="website icon" height="100" width="100">
+            <img src="./assets/html.png" alt="html icon" height="100" width="100">
+            <img src="./assets/css.png" alt="css icon" height="100" width="100">
+            <img src="./assets/js.png" alt="javascript icon" height="100" width="100">
+            <img src="./assets/eml.png" alt="" height="100" width="100">
+            <img src="./assets/github.png" alt="github icon" height="100" width="100">
+            <img src="./assets/Microsoft Office.png" alt="microsoft office icon" height="100" width="100">
+            <img src="./assets/obj.png" alt="object icon" height="100" width="100">
+            <img src="./assets/PostgreSQL.png" alt="postgresql icon" height="100" width="100">
+            <img src="./assets/React&Redux Logo.jpeg" alt="react/redux icon" height="100" width="100">
+            <img src="./assets/sql.png" alt="sql icon" height="100" width="100">
+            <img src="./assets/Visual Studio Code.webp" alt="vs code icon" height="100" width="100">
+            <img src="./assets/website.png" alt="website icon" height="100" width="100">
         </div>
 
         <div id="experience" class="main-container">
@@ -92,13 +102,13 @@
             <div id="torch">
                 <h4>Torch & Crown, Malibu Farm, Momofuku</h4>
                 <p>2018 - 2021</p>
-                <p>Opening team member at each establishment. </p>
+                <p>Being part of the opening team member for each new location strengthened my adaptability, collaboration, communication, fortitude and patience. No industry has strengthened my conviction that teamwork and diligence are a necessity, more than the hospitality industry. Sacrifices? Made. Spirit? Tested. Spicy? Always.</p>
             </div>
             
             <div id="partners">
                 <h4>Partners Coffee Roasters, Doughnut Plant</h4>
                 <p>2016 - 2018</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis iure atque doloremque illum iusto, laudantium eum excepturi facilis nesciunt explicabo unde reiciendis similique amet ea adipisci deserunt quos magni?</p>
+                <p>Honestly, I worked at Partners Coffee Roasters and Doughnut Plant because I'm a coffee-addict and I love doughnuts. BUT, this was my introduction into learning, tasting and breathing specialty coffee and I can never go back. Partners(previously called Toby's Estate) smacked me silly with their blueberry-bomb-pour-overs and chocolatey-velvety-espresso...and now I'm a spoiled coffee convert.</p>
             </div>
         </div>
     </div>
@@ -132,10 +142,16 @@
             <h3>Horoscope</h3>
             <p>The Sun said if you boop your cat's rabbit paws' beanies you'll get good luck today!</p>
             <p>Legends foretell of a shining circle in the skies, one during the day and one during the night....</p>
+            <p>You know what they say...when life gives you lemons, make limes.</p>
         </div>
 
         <div>
-            <img id="stickman" src="./hiker.png" alt="hiking-man">
+            <img id="stickman" src="./assets/hiker.png" alt="hiking-man">
+        </div>
+
+        <div>
+            <button id="dad-joke" type="button" onclick="joke()">Feeling down? Click here for a dad joke!</button>
+            <p id="happy"></p>
         </div>
 
         <div id="credit">
