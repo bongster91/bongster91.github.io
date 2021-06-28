@@ -1,3 +1,4 @@
+
 fetch('http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civillight&output=json')
     .then(response => response.json())
     .then(body => {
@@ -59,10 +60,23 @@ fetch('http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civillight
         }
         date.textContent = `${month} ${dateInfo.day}, ${dateInfo.year}`
     })
-    .catch(error => console.log(error))
+    .catch(error => console.log(`weather api error`))
 
-// switchStyle => {}
-
-joke () => {
-    fetch('')
+function getJoke () {
+    
+    fetch('https://icanhazdadjoke.com/', {
+        headers: {   
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        response.json()
+        console.log(response.json())
+    })
+    .then(body => {
+        console.log(body)
+    })
+    .catch(error => {
+        console.error(error)
+    })
 }
