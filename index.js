@@ -62,21 +62,27 @@ fetch('http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civillight
     })
     .catch(error => console.log(`weather api error`))
 
-function getJoke () {
+function toggleRecipe () {
+    const ingredients = document.getElementById('ingredients');
     
-    fetch('https://icanhazdadjoke.com/', {
-        headers: {   
-            'Accept': 'application/json'
-        }
-    })
-    .then(response => {
-        response.json()
-        console.log(response.json())
-    })
-    .then(body => {
-        console.log(body)
-    })
-    .catch(error => {
-        console.error(error)
-    })
-}
+    ingredients.style.display === 'none' ? ingredients.style.display = 'block' : ingredients.style.display = 'none';
+};
+
+// function getJoke () {
+    
+//     fetch('https://icanhazdadjoke.com/', {
+//         headers: {   
+//             'Accept': 'application/json'
+//         }
+//     })
+//     .then(response => {
+//         response.json()
+//         console.log(response.json())
+//     })
+//     .then(body => {
+//         console.log(body)
+//     })
+//     .catch(error => {
+//         console.error(error)
+//     })
+// }

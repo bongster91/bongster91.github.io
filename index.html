@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="news.css">
     <link rel="shortcut icon" type="image/png" href="./assets/Programming Favicon.png">
 </head>
+
 <body>
     <div class="container">
     <nav>
@@ -23,7 +24,7 @@
     
     <div id="misc-info">
         <ul id="misc-header" class="header">
-            <li id="random">Volume.I No.I</li>
+            <li id="random">Volume I No. I</li>
             <li id="stock">Pretend this is a free stock ticker api</li>
             <li id="date">Date?</li>
            
@@ -33,23 +34,26 @@
     
     <div id="welcome-header" class="header">
     <h1>Breaking News! Wild Bong Sighted!</h1>
-    <!-- <button id="switch-style" type="button" onclick="switchStyle()">Click me for different style!</button> -->
+    <!-- Maybe add button to switch style/format of site -->
     </div>
 
     <div id="main-section">
         
         <div id="bio" class="main-container">
             <img id="headshot" src="./assets/Pursuit 7.0 - Headshot.jpg" alt="headshot" height="200" width="200">
+            
             <div id="recipe">
                 <h3>Recipe of the Day: Grace Bong</h3>
-                <ul>
+                <button onclick="toggleRecipe()">Click to Toggle Recipe</button>
+                
+                <ul id="ingredients">
                     <li>1 slab of Korean American</li>
                     <li>1 jug of LGBTQIA+</li>
                     <li>1 julienned female</li>
                     <li>1 sprinkling of bartender/barista</li>
                     <li>1 dash of wittiness</li>
                 </ul>
-                <p>Take your slab of Korean American, slather on that LGBTQIA and bake for 40min at 400F. Combine your julienned female with some bartener/barista and a dash of wittiness into a large bowl and toss. Serve your slab hot and sizzling with a side of cool seasoned julienne.</p>
+                <p>Take your slab of Korean American, slather on that LGBT+ and bake for 40min at 400F. Combine your julienned female with some bartener/barista and a dash of wittiness into a large bowl and toss. Serve your slab hot and sizzling with a side of cool seasoned julienne.</p>
             </div>
             
             <div id="background">
@@ -170,10 +174,10 @@
             <!-- <img id="stickman" src="./assets/hiker.png" alt="hiking-man"> -->
         </div>
 
-        <div>
+        <!-- <div>
             <button id="dad-joke" type="button" onclick="getJoke()">Feeling down? Click here for a dad joke!</button>
             <p id="happy"></p>
-        </div>
+        </div> -->
 
         <div id="credit">
             <h3>Credit for sources</h3>
